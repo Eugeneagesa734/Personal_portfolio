@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eugenedevops">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">Portfolio.</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="#" class="active" style="--navAni:1">Home</a></li>
+                <li><a href="About" style="--navAni:2">About</a></li>
+                <li><a href="#" style="--navAni:3">Skills</a></li>
+                <li><a href="#" style="--navAni:4">Portfolio</a></li>
+                <li><a href="#" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="main">
+            <div class="images">
+                <img src="personal.jpg" alt="Portfolio cover picture" class="img-w">
+                <span class="bg-effect-1">
+                <span class="bg-effect-1"></span>
+
+                </span>
+            </div>
+            <div class="detail">
+                <h3>Hi, I'm</h3>
+                <h1><span style="color:#f9532d;">Eugene</span> Agesa</h1> 
+                <p>I'm a full stack Wed Developer based in Nairobi Kenya. I am passionate about software development and all that is entailed in coming up with software products.
+                     My main aim is helping clients come up with best tailored websites according to their own design to meet their own personal business goals. I purpose at specializing
+                      and becoming a full backend software developer with an aim of helping clients come up with more reliable and easy to use software products.
+                </p>
+                
+                
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/eugene-agesa-80a559279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://instagram.com/eugenedevops?igshid=NGVhN2U2NjQ0Yg==" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/" style="--socialAni:3"><i class="bx bxl-github"></i></a>
+                    <a href="https://x.com/EugeneAgesa1?t=_IVD6rOlWUu7lYKnvaECaQ&s=09" style="--socialAni:4"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="header-2">About</span></h1><br>
+        <p class="par-2">I'm Currently a student pursuing software engineering at Zetech University and a soft course at ALx in the same field.
+            I have learnt several programming languages and quite well proficient in most of them
+
+        </p>
+    </section><br><br>
+
+    <section>
+        <h1 class="header-3">Skills</span></h1><br>
+        <p class="sub-hd">html and css</p>
+        <div class="cont">
+            <div class="html skillset">85%</div>
+
+        </div><br>
+        
+
+        <p class="sub-hd">Python</p>
+        <div class="cont">
+            <div class="python skillset">80%</div>
+
+        </div><br>
+
+        <p class="sub-hd">C and C++</p>
+        <div class="cont">
+            <div class="C skillset">90%</div>
+
+        </div><br>
+
+        <p class="sub-hd">Java Script</p>
+        <div class="cont">
+            <div class="js skillset">70%</div>
+
+        </div><br>
+        
+        
+    </section>
+
+    <footer class="bottom">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/eugene-agesa-80a559279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://instagram.com/eugenedevops?igshid=NGVhN2U2NjQ0Yg==" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/" style="--socialAni:3"><i class="bx bxl-github"></i></a>
+            <a href="https://x.com/EugeneAgesa1?t=_IVD6rOlWUu7lYKnvaECaQ&s=09" style="--socialAni:4"><i class='bx bxl-twitter'></i></a>
+        </div>
+
+    </footer>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+
+    
+
+    
+</body>
+</html>
