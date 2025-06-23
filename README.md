@@ -1,2 +1,1 @@
-# Personal_portfolio
-Personal portfolio project
+README.mmd file for my personal posrtfolio build using react
